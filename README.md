@@ -1,2 +1,2 @@
 # 3D-Robot-Website
-Website for 3D Robot
+This repository contains anything and everything related to the 3D Robot website.
