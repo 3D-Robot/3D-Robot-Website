@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[225],{19459:function(n,u,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/thinking/archive/[topicSlug]/[currentPage]",function(){return _(54117)}])}},function(n){n.O(0,[67,623,117,774,888,179],(function(){return u=19459,n(n.s=u);var u}));var u=n.O();_N_E=u}]);
