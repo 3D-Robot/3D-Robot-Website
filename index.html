@@ -1,173 +1,375 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Mon Jul 25 2022 16:43:59 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="62d314f0b7f9bc0e5d2610ec" data-wf-site="62d314efb7f9bcbb582610e8">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>3D Robot</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-
-    <!-- Custom styles for this template -->
-    <link href="heroes.css" rel="stylesheet">
-
-    <!--fonts-->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
-
-
+  <meta charset="utf-8">
+  <title>3D Robot - The 3D Printed Everyday Use Robot</title>
+  <meta content="Start increasing your marketing efforts in just a few minutes with powerful SMS &amp; email marketing automation tools. Get started now, no credit card required." name="description">
+  <meta content="3D Robot - The 3D Printed Everyday Use Robot" property="og:title">
+  <meta content="Start increasing your marketing efforts in just a few minutes with powerful SMS &amp; email marketing automation tools. Get started now, no credit card required." property="og:description">
+  <meta content="https://uploads-ssl.webflow.com/62775284c0b31874b48c9589/627d3deeb82686757fb09efd_open-graph-image%20(1).png" property="og:image">
+  <meta content="3D Robot - The 3D Printed Everyday Use Robot" property="twitter:title">
+  <meta content="Start increasing your marketing efforts in just a few minutes with powerful SMS &amp; email marketing automation tools. Get started now, no credit card required." property="twitter:description">
+  <meta content="https://uploads-ssl.webflow.com/62775284c0b31874b48c9589/627d3deeb82686757fb09efd_open-graph-image%20(1).png" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/avins-supercool-site-9df01b.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Space Grotesk:300,regular,500,600,700"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon"><!--  Please keep this css code to improve the font quality -->
+  <style>
+  * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+  .w-webflow-badge {
+   	display: None !important;
+   	visibility: hidden !important;
+  }
+  ::selection {
+  	background: #DEDBF9;
+  }
+</style>
 </head>
-
 <body>
-
-    <main>
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">3D Robot</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="products.html">Products</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-bs-toggle="dropdown"
-                                aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown08">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+/* Snippet gets rid of top margin on first element in any rich text*/
+.w-richtext>:first-child {
+	margin-top: 0;
+}
+/* Snippet gets rid of bottom margin on last element in any rich text*/
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0;
+}
+/* Snippet prevents all click and hover interaction with an element */
+.clickable-off {
+	pointer-events: none;
+}
+/* Snippet enables all click and hover interaction with an element */
+.clickable-on{
+  pointer-events: auto;
+}
+/* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+/*Hide focus outline for main content element*/
+main:focus-visible {
+	outline: -webkit-focus-ring-color auto 0px;
+}
+/* Make sure containers never lose their center alignment*/
+.container-medium, .container-small, .container-large {
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+/*Reset buttons, and links styles*/
+a {
+	color: inherit;
+	text-decoration: inherit;
+	font-size: inherit;
+}
+/*Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/*Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+</style>
+    </div>
+    <div id="top" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav_component w-nav">
+      <div class="page-padding">
+        <div class="container-large">
+          <div class="nav_grid">
+            <a href="#top" class="nav_logo-link w-nav-brand"><img src="images/Yellow-Black-News-Logo.png" loading="lazy" height="60" alt=""></a>
+            <nav role="navigation" class="nav_menu w-nav-menu">
+              <div class="page-padding">
+                <div class="nav_links-wrapper">
+                  <a href="#solutions" class="nav_link">3D Robot</a>
+                  <a href="#features" class="nav_link">Discord</a>
+                  <a href="#how-it-works" class="nav_link">Technical Info</a>
+                  <a href="#" class="button-text is-hidden-desktop-tablet w-button">Log in</a>
+                  <div class="margin-vertical margin-xsmall">
+                    <a href="#" class="button-secondary is-hidden-desktop-tablet max-width-full w-button">Sign up</a>
+                  </div>
                 </div>
+              </div>
+            </nav>
+            <div id="w-node-_1fb6bae2-7814-9a16-634d-a51ef4d89c83-8d951908" class="nav_buttons-wrapper">
+              <div id="w-node-_3839ba7e-c260-096f-bea0-83658d951921-8d951908" class="nav_ctas-wrapper is-hidden-mobile-landscape-portrait">
+                <a href="https://3drobot.miraheze.org/wiki/Main_Page" class="button-text w-button">Learn more</a>
+                <div class="margin-left margin-small">
+                  <a href="https://discord.gg/eUmMmv8RXn" class="button-secondary w-button">Join Discord</a>
+                </div>
+              </div>
+              <div class="nav_menu-button w-nav-button">
+                <div data-w-id="93bdc65a-204d-95c5-1d98-cd0f58fc7125" data-is-ix2-target="1" class="nav_menu-button-lottie" data-animation-type="lottie" data-src="documents/menu-lottie.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0.6666666666666666" data-duration="0"></div>
+              </div>
             </div>
-        </nav>
-        <!--navbar end-->
-
-
-        <!--3D Robot main-->
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <video src="3D-Robot.mp4" width="85%" height="85%" autoplay loop>
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold lh-1 mb-3"
-                        style="    font-family: 'Source Sans Pro', sans-serif;                    ">
-                        3D Robot</h2>
-                    <p class="lead" style="font-size: 23px;">3D Robot is a robot that can move things around in the
-                        xyzrxryrzc field. It can also
-                        have toolheads that enable it to do certain tasks. It can also do assembly and finally it will
-                        be able to completely self replicate. A rendered model is in the picture to the left.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main-wrapper">
+      <section class="section-home-header">
+        <div class="page-padding">
+          <div class="container-medium">
+            <div class="padding-vertical padding-large">
+              <div class="text-align-center">
+                <div class="home-header_component">
+                  <div class="align-center max-width-xlarge">
+                    <div class="margin-bottom margin-custom1">
+                      <div class="align-center max-width-large">
+                        <h1 class="puple">The future of <span class="text-span">Robotics </span>and <span class="text-span-2">Engineering.</span></h1><img src="images/Untitled-2-1.png" loading="lazy" data-w-id="ba91e8d7-5fa8-19b9-5116-a7e4d9715090" srcset="images/Untitled-2-1-p-500.png 500w, images/Untitled-2-1-p-800.png 800w, images/Untitled-2-1-p-1080.png 1080w, images/Untitled-2-1-p-1600.png 1600w, images/Untitled-2-1-p-2000.png 2000w, images/Untitled-2-1-p-2600.png 2600w, images/Untitled-2-1.png 2894w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 90vw, 768px" alt="">
+                      </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!--3D Robot main end-->
-
-
-        <!--space-->
-        <div class="b-example-divider"></div>
-
-        <!--Check out the 3D Robot Project-->
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="visit-wiki-graphic.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                        width="700" height="500" loading="lazy" style="border-radius: 25px;">
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold lh-1 mb-3" style="font-family: 'Source Sans Pro', sans-serif;">
-                        Check out the 3D Robot Project</h2>
-                    <p class="lead" style="font-size: 23x;">3DR-D token launched to find out more check out the crypto
-                        page , this over time
-                        should help our system grow! Check out the page for more details and how to help out!.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-
-                        <a href="https://3drobot.miraheze.org/wiki/Main_Page" target="_blank">
-                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Check Out</button>
-                        </a>
-
+                    <div class="margin-bottom margin-custom1">
+                      <p class="text-style-muted text-size-medium">Register to get more information and updates right to your inbox.</p>
                     </div>
+                    <div class="align-center max-width-medium">
+                      <div class="home-header_form-component w-form">
+                        <form id="wf-form-Home-Header-Form" name="wf-form-Home-Header-Form" data-name="Home Header Form" action="https://gmail.us11.list-manage.com/subscribe/post?u=8cff0a74c9f07a7809a045478&amp;amp;id=917b02a59c" method="post" class="home-header_form-wrapper"><input type="text" class="home-header_form-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Enter your email address" id="Email-3" required="">
+                          <div class="home-header_form-button-wrapper"><input type="submit" data-wait="Please wait..." value="Tell me more" class="button-dark max-width-full w-button"></div>
+                        </form>
+                        <div class="form_success w-form-done">
+                          <div>Thank you! Watch out for updates...</div>
+                        </div>
+                        <div class="form_error w-form-fail">
+                          <div>Oops! Something went wrong. Refresh the page and try again.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!--Check out the 3D Robot Project end-->
-
-        <!--space-->
-        <div class="b-example-divider"></div>
-        <div class="b-example-divider"></div>
-
-
-        <!--how it works-->
-        <div class="px-4 pt-5 my-5 text-center border-bottom">
-            <h1 class="display-4 fw-bold">How it works</h1>
-            <br>
-            <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">The Robot is made of two arms each has xyz linear movement and on it's end it has a
-                    gimbal which allows for rotation about the xyz called the rx, ry, rz axes. On the end of the gimbal
-                    there is a connector that will connect with computer manufactured parts The machine closely
-                    interacts with 3D Builders, which allow for many different types of computer aided manufacturing.
-                </p>
-            </div>
-
-            <div class="b-example-divider"></div>
-            <div class="b-example-divider"></div>
-            <div class="b-example-divider"></div>
-
-            <div class="overflow-hidden" style="max-height: 30vh;">
-                <div class="container px-5">
+        <div class="grey-background"></div>
+        <div class="backgrounds_max-width">
+          <div class="purple-background"></div>
+          <div class="green-background"></div>
+        </div>
+      </section>
+      <section class="section-home-company-logos">
+        <div class="page-padding">
+          <div class="container-medium"></div>
+        </div>
+      </section>
+      <section id="solutions" class="section-home-solution-tabs">
+        <div class="page-padding">
+          <div class="container-small">
+            <div class="padding-vertical padding-huge">
+              <div class="margin-bottom margin-xlarge">
+                <h2 class="text-align-center">Learn more on how 3D Robot functions below.</h2>
+              </div>
+              <div data-current="Tab 4" data-easing="ease" data-duration-in="300" data-duration-out="100" class="solution-tabs_component w-tabs">
+                <div class="solution-tabs_menu w-tab-menu">
+                  <a data-w-tab="Tab 1" data-w-id="a7c72a9e-2248-57a1-0368-10b7c8b0b4cf" class="solution-tabs_link w-inline-block w-tab-link">
+                    <div class="solution-tabs_link-wrapper">
+                      <div class="margin-bottom margin-small"><img loading="lazy" data-w-id="72e305d0-7091-6aa3-3cf0-87d6b7a28d05" src="images/payment-icon-dark.svg" alt="Dark payments icon" class="solutions-tabs_link-image"><img loading="lazy" data-w-id="aa3a725a-a222-54b0-1636-1e09c90b977a" src="images/chat-icon.svg" alt="White payment icon" class="solutions-tabs_link-image is-tab-in-view-icon"></div>
+                      <div class="solutions-tabs_link-text">How it works</div>
+                    </div><img loading="lazy" data-w-id="a889856f-5abd-b197-d461-2667465741e0" src="images/point2.svg" alt="" class="solution-tabs_link-pointer-image">
+                  </a>
+                  <a data-w-tab="Tab 2" data-w-id="a7c72a9e-2248-57a1-0368-10b7c8b0b4d2" class="solution-tabs_link w-inline-block w-tab-link">
+                    <div class="solution-tabs_link-wrapper">
+                      <div class="margin-bottom margin-small"><img loading="lazy" data-w-id="e2b79cee-45e9-1ffd-36fd-586f8bb04f54" src="images/chat-icon-dark.svg" alt="Dark chat icon" class="solutions-tabs_link-image"><img loading="lazy" data-w-id="b6f11b75-d7ac-6383-5989-a60e1a75f3b1" src="images/chat-1.svg" alt="White chat icon" class="solutions-tabs_link-image is-tab-in-view-icon"></div>
+                      <div class="solutions-tabs_link-text">Connect</div>
+                    </div><img loading="lazy" data-w-id="9fe9410c-c60b-5d19-3a97-0fb51d292b4d" src="images/point2.svg" alt="" class="solution-tabs_link-pointer-image">
+                  </a>
+                  <a data-w-tab="Tab 3" data-w-id="a7c72a9e-2248-57a1-0368-10b7c8b0b4d5" class="solution-tabs_link w-inline-block w-tab-link">
+                    <div class="solution-tabs_link-wrapper">
+                      <div class="margin-bottom margin-small"><img loading="lazy" data-w-id="50ead42e-4c32-a1fb-e1f9-0f8c80aa6e0a" src="images/certificate-dark.svg" alt="Dark certificate icon" class="solutions-tabs_link-image"><img loading="lazy" data-w-id="ddd88c30-087b-4f99-5d2f-c929868e3f61" src="images/payment-icon.svg" alt="White certificate icon" class="solutions-tabs_link-image is-tab-in-view-icon"></div>
+                      <div class="solutions-tabs_link-text">3D Printer</div>
+                    </div><img loading="lazy" data-w-id="a189ecd5-e3ff-85f7-1382-5f00610fc103" src="images/point2.svg" alt="" class="solution-tabs_link-pointer-image">
+                  </a>
+                  <a data-w-tab="Tab 4" data-w-id="476325e7-e9ef-1332-5c04-08010f4b78e0" class="solution-tabs_link w-inline-block w-tab-link w--current">
+                    <div class="solution-tabs_link-wrapper">
+                      <div class="margin-bottom margin-small"><img loading="lazy" data-w-id="9be4296a-611a-952e-9423-0b58236e45dc" src="images/house-2.svg" alt="Dark house icon" class="solutions-tabs_link-image"><img loading="lazy" data-w-id="02fbbfe6-3ead-7df6-6094-ea6445c768a9" src="images/house-1.svg" alt="White house icon" class="solutions-tabs_link-image is-tab-in-view-icon"></div>
+                      <div class="solutions-tabs_link-text">Ecosystems</div>
+                    </div><img loading="lazy" data-w-id="6199f6ea-11f7-7547-2af1-22515f90cdc9" src="images/point2.svg" alt="" class="solution-tabs_link-pointer-image">
+                  </a>
                 </div>
-            </div>
-        </div>
-        <!--how it works end-->
-
-        <!--3D Robots-->
-        <div class="px-4 pt-5 my-5 text-center border-bottom">
-            <h1 class="display-4 fw-bold">3D Robots</h1>
-            <br>
-            <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">Our first product is 3D Robot which will be available soon. For more details visit
-                    our Products page.
-                </p>
-            </div>
-
-            <div class="b-example-divider"></div>
-            <div class="b-example-divider"></div>
-            <div class="b-example-divider"></div>
-
-            <div class="overflow-hidden" style="max-height: 30vh;">
-                <div class="container px-5">
+                <div class="solution-tabs_content w-tab-content">
+                  <div data-w-tab="Tab 1" class="solution-tabs_tab-pane w-tab-pane">
+                    <div class="margin-top margin-medium">
+                      <h3>3D Robot</h3>
+                      <div class="margin-vertical margin-small">
+                        <p class="text-style-muted">The robot is made of one or two arms on a omniwheel base that allows it to put any object of any material into any orientation. It has complete control of the xyz axis and the three rotations of rx ry rz. That is all of the six degrees of freedom!</p>
+                      </div>
+                      <a href="#how-it-works" class="text-style-link">Find out more</a>
+                    </div>
+                  </div>
+                  <div data-w-tab="Tab 2" class="solution-tabs_tab-pane w-tab-pane">
+                    <div class="margin-top margin-medium">
+                      <h3><strong>Connect</strong></h3>
+                      <div class="margin-vertical margin-small">
+                        <p class="text-style-muted">It is important to properly connect to parts to be able to move them around. We use our own system that allows us to get very good results (better then anyone else). This connector on the end of the robot allows us to accurately more around parts and toolheads to build complete systems!</p>
+                      </div>
+                      <a href="#pricing" class="text-style-link">Find out more</a>
+                    </div>
+                  </div>
+                  <div data-w-tab="Tab 3" class="solution-tabs_tab-pane w-tab-pane">
+                    <div class="margin-top margin-medium">
+                      <h3>Collapsible 3D Printer / CNC<br></h3>
+                      <div class="margin-vertical margin-small">
+                        <p class="text-style-muted">It is critical to be able to rapidly manufacture and create custom objects for this sytem to work. Every system is made up of objects in orientations. objects are made up of materials. There are a whole host of machines that are able to make these objects. Some of these processes (like 3d printing and light duty cnc routing and polishing) will be able to be done by the robot itself. These machines will be systems as part of the 3D Robot ecosystem and our goal is to have as many to be compatible with the 3D Robot to be able to create complete systems!</p>
+                      </div>
+                      <a href="#pricing" class="text-style-link">Find out more</a>
+                    </div>
+                  </div>
+                  <div data-w-tab="Tab 4" class="solution-tabs_tab-pane w-tab-pane w--tab-active">
+                    <div class="margin-top margin-medium">
+                      <h3>Crypto<br></h3>
+                      <div class="margin-vertical margin-small">
+                        <p class="text-style-muted">The goal of our ecosystem is to enable exponentially growing decentralized engineering and manufacturing.We believe the best and only way to do so is through the use of cutting edge technologies such as crypto and CAD softwares and open source collaborative design.In order to ensure that everyone is doing the right things we launched our 3DR-D token that will incentivize the design phase. There will also be End Products and Raw Materials that will help individuals get the systems and raw materials they need.</p>
+                      </div>
+                      <a href="#pricing" class="text-style-link">Find out more</a>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!--3D Robots end-->
-
-
-
+      </section>
+      <section id="features" class="section-home-features">
+        <div class="page-padding">
+          <div class="container-medium">
+            <div class="features_component">
+              <div class="padding-vertical padding-huge">
+                <div class="features_grid">
+                  <div id="w-node-b08d3b92-c544-36c1-da59-80b2aff47cb4-5d2610ec" class="features_text-wrapper">
+                    <div class="margin-bottom margin-medium">
+                      <h2>Join Us on Discord</h2>
+                    </div>
+                    <div class="margin-bottom margin-medium">
+                      <p class="text-style-muted">Contribute to the project while meeting new people from around the world and learning many skills. Click below to join the Discord server.</p>
+                    </div>
+                    <a href="https://discord.gg/eUmMmv8RXn" target="_blank" class="button w-button">Let Me In</a>
+                  </div><img src="images/sms-dashboard-screenshot.png" loading="lazy" srcset="images/sms-dashboard-screenshot-p-500.png 500w, images/sms-dashboard-screenshot-p-800.png 800w, images/sms-dashboard-screenshot-p-1080.png 1080w, images/sms-dashboard-screenshot.png 1204w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 92vw, (max-width: 1439px) 45vw, 552px" alt="SMS messaging in the dashboard" class="features_image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="how-it-works" class="section-home-steps">
+        <div class="page-padding">
+          <div class="container-medium">
+            <div class="padding-vertical padding-huge">
+              <div class="margin-bottom margin-xlarge">
+                <div class="align-center max-width-large">
+                  <div class="text-align-center">
+                    <div class="margin-bottom margin-small">
+                      <h2>Want more info?</h2>
+                    </div>
+                    <p>Dive deep into detailed information behind the 3D robot, how its made, what technologies we use &amp; much more on the official wiki! </p>
+                  </div>
+                </div>
+              </div>
+              <div class="max-width-xlarge align-center"></div>
+              <div class="margin-top margin-large">
+                <div class="text-align-center">
+                  <a href="https://3drobot.miraheze.org/wiki" target="_blank" class="button w-button">3DR WIKI</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials" class="section-home-testimonials">
+        <div class="page-padding">
+          <div class="container-medium"></div>
+        </div>
+      </section>
+      <section id="pricing" class="section-pricing">
+        <div class="page-padding">
+          <div class="container-medium"></div>
+        </div>
+      </section>
     </main>
-
+    <div class="footer_component">
+      <div class="page-padding">
+        <div class="container-large">
+          <div class="padding-vertical padding-huge">
+            <div class="footer_grid">
+              <div id="w-node-a1f39293-0768-bdef-768c-3c1ad5927ad0-f6ca7cf5" class="footer_grid-item max-width-xsmall">
+                <div class="margin-bottom margin-small">
+                  <a href="#top" class="footer_logo-link w-inline-block"><img src="images/Yellow-Black-News-Logo.png" loading="lazy" width="Auto" height="75" alt="" class="footer_logo-image"></a>
+                </div>
+                <div class="margin-bottom margin-large">
+                  <p class="text-style-muted">Future of Robotics and Engineering.</p>
+                </div>
+                <div class="margin-bottom margin-medium">
+                  <div class="text-style-allcaps text-weight-bold text-size-small">Get in touch</div>
+                </div>
+              </div>
+              <div id="w-node-f39a5d4a-0f5b-b70d-65ec-3b3f548d4a2c-f6ca7cf5" class="footer_grid-item">
+                <div class="margin-bottom margin-small"></div>
+              </div>
+              <div id="w-node-_8351e3eb-7bd5-68c5-acde-8ca1c136d279-f6ca7cf5" class="footer_grid-item"></div>
+              <div id="w-node-c165d95d-1ed1-3720-0117-b48e60f4bc5c-f6ca7cf5" class="footer_grid-item">
+                <div class="margin-bottom margin-small">
+                  <p class="text-style-muted">Subscribe to 3DR Mails to keep up with the latest news and events.</p>
+                </div>
+                <div class="footer_form-component w-form">
+                  <form id="wf-form-Footer-Form" name="wf-form-Footer-Form" data-name="Footer Form" action="https://gmail.us11.list-manage.com/subscribe/post?u=8cff0a74c9f07a7809a045478&amp;amp;id=917b02a59c" method="get" class="footer_form-wrapper"><input type="email" class="footer_form-field w-input" maxlength="256" name="email" data-name="Email" placeholder="Email" id="email" required="">
+                    <div class="margin-left margin-small"><input type="submit" data-wait="Please wait..." value="Submit" class="button is-short w-button"></div>
+                  </form>
+                  <div class="form_success w-form-done">
+                    <div>Thank you! Your submission has been received!</div>
+                  </div>
+                  <div class="form_error w-form-fail">
+                    <div>Oops! Something went wrong while submitting the form.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer_icon-wrapper">
+                <a id="w-node-b084b689-fba6-754e-52bd-9bd8b845d81e-f6ca7cf5" href="#" class="footer_icon-link w-inline-block">
+                  <div class="icon-1x1-small w-embed"><svg aria-hidden="true" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                      <title>Twitter icon</title>
+                      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path>
+                    </svg></div>
+                </a>
+                <div class="icon-1x1-small w-embed"><svg aria-hidden="true" role="img" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>LinkedIn icon</title>
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                  </svg></div>
+                <a id="w-node-dfbb6c9a-30a4-f135-f0c2-bad4b1973691-f6ca7cf5" href="#" class="footer_icon-link w-inline-block"></a>
+                <a id="w-node-_24ee44e0-559a-4bdc-7b85-432c9834b4ed-f6ca7cf5" href="#" class="footer_icon-link w-inline-block"></a>
+              </div>
+            </div>
+            <div class="footer_lower">
+              <div class="text-size-small text-style-muted">@2022 3D Robot. All rights reserved.</div>
+              <div class="text-size-small text-style-muted">Developed by <a href="https://avinhere.me">Avin Indrasoma.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=62d314efb7f9bcbb582610e8" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
-
 </html>
