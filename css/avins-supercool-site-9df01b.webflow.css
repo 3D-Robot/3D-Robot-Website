@@ -1978,6 +1978,10 @@ figcaption {
 }
 
 @media screen and (min-width: 1440px) {
+  .page-padding {
+    margin-top: -31px;
+  }
+
   .footer_component {
     margin-top: -1px;
     margin-bottom: -83px;
@@ -2587,6 +2591,10 @@ figcaption {
 
   .hide-mobile-portrait {
     display: none;
+  }
+
+  .page-padding {
+    margin-top: 11px;
   }
 
   .styleguide_2-col {
